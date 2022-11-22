@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.error {
+  border: 1px solid red !important;
+}
+
+.white-text {
+  color: white;
+}
+
+.blueBackground {
+  background-color: #1565c0;
+}
