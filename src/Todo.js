@@ -32,13 +32,14 @@ export const Todo = (props) => {
             props.handleUpdateClick(
               props.description,
               props.piority,
-              props.deadline
+              props.date
             );
             props.setTargetTitle(props.title);
           }}
           key="Update"
+          color="primary"
           variant="contained"
-          startIcon={<DeleteIcon />}
+          startIcon={<UpdateIcon />}
         >
           Update
         </Button>,
@@ -46,6 +47,7 @@ export const Todo = (props) => {
           onClick={() => {
             props.setDeleteTargetTitle(props.title);
           }}
+          color="error"
           key="Delete"
           variant="contained"
           startIcon={<DeleteIcon />}
